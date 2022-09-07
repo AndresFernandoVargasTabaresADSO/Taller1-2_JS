@@ -1,12 +1,14 @@
 addEventListener("DOMContentLoaded",()=>{
-    console.log(`8. Escribir un programa que evalúe la siguiente expresión:
-    (a+7*c)/(b+2-a)+2*b`)
+    console.log(`9. Escribir un programa que calcule el área y el volumen de un cilindro:
+    A = (2 * (PI * r˄2)) + ((2 * PI * r) * h)
+    V = (PI * r2) * h`)
 
-    let numa= Number(prompt(`Escribe el valor de a: `))
-    let numb= Number(prompt(`Escribe el valor de b: `))
-    let numc= Number(prompt(`Escribe el valor de c: `))
+    let radio= Number(prompt(`Escribe el radio del cilindro`))
+    let altura= Number(prompt(`Escribe la altura del cilindro: `))
 
-    let solcuion= (numa + 7* numc)/(numb + 2 - numa)+ 2*numb
+    let a= (2 * (Math.PI * Math.pow(radio,2))+((2*Math.PI * radio)* altura))
+    let v= (Math.PI * Math.pow(radio,2)* altura)
 
-    console.log(`Resultado: ${solcuion}`)
+    console.log(`El area del cilindro es: ${a}`)
+    console.log(`El volumen del cilindro es: ${v}`)
 })
