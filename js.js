@@ -1,12 +1,8 @@
 addEventListener("DOMContentLoaded",()=>{
-    console.log(`14. Una farmacia aplica al precio de los remedios el 10% de descuento, hacer un programa que
-    ingresando el costo de los medicamentos calcules el descuento y el precio final.`)
+    console.log(`15. Hacer un diagrama para convertir de grados centígrados a grados Fahrenheit.`)
 
-    let producto= Number(prompt(`Ingrese el valor del medicamento: $ `))
+    let grados= Number(prompt(`Ingresa los grados centigrados: `))
+    let solucion= (grados*1.8)+32
 
-    let descuento= (producto*0.10)
-    let solucion= (producto-descuento)
-    console.log(`El precio del medicamento es: $ ${producto}`)
-    console.log(`Descuento del 10%: $ ${descuento}`)
-    console.log(`El medicamento con el 10% de descuento es: $ ${solucion}`)
+    console.log(`Grados en Fahrenheit: ${solucion} °F`)
 })
