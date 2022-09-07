@@ -1,28 +1,16 @@
 addEventListener("DOMContentLoaded",()=>{
-    console.log(`16. Elaborar un algoritmo para calcular el promedio final de la materia de algoritmos. Dicha calificación se
-    compone de los siguientes porcentajes:
-    • 55% del promedio final de sus calificaciones de los tres(3) parciales.
-    • 30% de la calificación examen final y
-    • 15% de la calificación trabajo final.
-    `)
+    console.log(`17. Dado el valor que un cliente paga por un producto, calcular qué valor corresponde al costo total del
+    producto y cuánto es el valor del IVA. Considerando que el porcentaje del IVA puede variar en el
+    tiempo y de un producto a otro, este dato se lee por teclado`)
 
-    let parcial1= Number(prompt(`Ingresa tu parcial #1`))
-    let parcial2= Number(prompt(`Ingresa tu parcial #2`))
-    let parcial3= Number(prompt(`Ingresa tu parcial #3`))
-    let calificacionEx= Number(prompt(`Ingresa tu calificacion del examen final: `))
-    let trabajoFinal= Number(prompt(`Ingresa tu calificacion del trabajo final: `))
+    let iva= Number(prompt(`Valor del iva actual: `))
+    let producto= Number(prompt(`Ingresa el valor del producto`))
 
-    let promParciales= (parcial1 + parcial2 + parcial3)/3
-    let promedioParciales= (promParciales*0.55)
-    let examenFinal=(calificacionEx*0.30)
-    let trabFinal=(trabajoFinal*0.15)
-    let notaFinal=(promedioParciales+examenFinal+trabFinal)
+    let precioIva= ((producto * iva)/100)
+    let precioProducto= (precioIva + producto)
 
-
-    console.log(`Tu promedio de los 3 parciales es: ${promedioParciales}`)
-    console.log(`Tu promedio del examen final es: ${examenFinal}`)
-    console.log(`Tu promedio del trabajo final es: ${trabFinal}`)
-    console.log(`Tu nota final en la material de algoritmos es: ${notaFinal}`)
+    console.log(`El valor del iva es: $ ${precioIva}`)
+    console.log(`El precio del producto con el ${iva}% es: $ ${precioProducto}`)
 
 
 })
