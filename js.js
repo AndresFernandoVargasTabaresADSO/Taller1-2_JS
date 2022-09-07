@@ -1,11 +1,9 @@
 addEventListener("DOMContentLoaded",()=>{
+    console.log(`4. Escribir un programa que calcule el área de un triángulo:    Base = 7 altura = 4 área del triángulo = (base * altura)/2`)
 
-    let num1 = Number(prompt(`Ingresa tu primer numero: `))
-    let num2 = Number(prompt(`Ingresa tu segundo numero: `))
-    let num3 = Number(prompt(`Ingresa tu tercer numero: `))
-    let num4 = Number(prompt(`Ingresa tu cuarto numero: `))
-    let solucion= (num1 + num2 + num3 + num4)/4
+    let lado1 = Number(prompt(`Escribe la base de tu triangulo: `))
+    let lado2 = Number(prompt(`Ingresa la altura de tu triangulo: `))
+    let solucion= (lado1 * lado2)/2
     
-    console.log(`3. Un programa que lea 4 números y calcule la media. Media= (num1 + num2 + num3 + num4)/4`)
-    console.log(`El promedio es: ${solucion}`)
+    console.log(`El area de tu triangulo es: ${solucion}`)
 })
