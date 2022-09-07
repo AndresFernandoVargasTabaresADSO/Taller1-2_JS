@@ -1,9 +1,11 @@
 addEventListener("DOMContentLoaded",()=>{
 
-    let lado = Number(prompt(`Escribe el lado de tu rectangulo: `,2))
-    let lado2 = Number(prompt(`Escribe el segundo lado de tu rectangulo: `,2))
-
+    let num1 = Number(prompt(`Ingresa tu primer numero: `))
+    let num2 = Number(prompt(`Ingresa tu segundo numero: `))
+    let num3 = Number(prompt(`Ingresa tu tercer numero: `))
+    let num4 = Number(prompt(`Ingresa tu cuarto numero: `))
+    let solucion= (num1 + num2 + num3 + num4)/4
     
-    console.log(`2. Escribir un programa que calcule el área de un rectángulo: lado1 = 3 lado2 = 4 área del rectángulo= lado1 * lado2`)
-    console.log(`El area de tu rectangulo es: ${lado * lado2}`)
+    console.log(`3. Un programa que lea 4 números y calcule la media. Media= (num1 + num2 + num3 + num4)/4`)
+    console.log(`El promedio es: ${solucion}`)
 })
