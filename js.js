@@ -1,13 +1,21 @@
 addEventListener("DOMContentLoaded",()=>{
-    console.log(`18. Calcular el sueldo de un empleado dados como datos de entrada: el nombre, hrs. De trabajo y el pago
-    en hora. Pagohora=15300`)
+    console.log(`19. Un estudiante realiza cuatro exámenes. Realizar el pseudocódigo que representen el algoritmo
+    correspondiente para obtener el promedio de las calificaciones obtenidas. las calificaciones van 1 a 5
+    puntos.`)
 
-    let nombre= String(prompt(`Ingresa tu nombre: `))
-    let horasTrabajo= Number(prompt(`Ingrese las horas de trabajo: `))
+    let nota1= Number(prompt(`Ingresa tu nota del examen #1`))
+    let nota2= Number(prompt(`Ingresa tu nota del examen #2`))
+    let nota3= Number(prompt(`Ingresa tu nota del examen #3`))
+    let nota4= Number(prompt(`Ingresa tu nota del examen #4`))
 
-    let pagoHora= 15300
+    let promedio=(nota1 + nota2 +nota3 + nota4)/4
 
-    let solucion= (horasTrabajo*pagoHora)
-
-    console.log(`Buenos dias Sr. ${nombre} trabajaste ${horasTrabajo} horas, tu total del pago es: ${solucion}`)
+    console.log(`Tu nota final es: ${promedio}`)
+    
+    if(promedio>=3.0){
+        console.log(`Aprobaste`)
+    }
+    else{
+        console.log(`Reprobaste!`)
+    }
 })
