@@ -1,17 +1,15 @@
 addEventListener("DOMContentLoaded",()=>{
-    console.log(`20. Un vendedor recibe un sueldo base más el 10% de comisión sobre sus ventas. Si en un mes
-    cualquiera hace tres ventas por valores: v1, v2 y v3, ¿cuánto recibirá por comisión? y ¿cuánto en total
-    sueldo del vendedor?`)
+    console.log(`21. Se requiere calcular la distancia entre dos puntos, realizar el código que permita hallar la solución,
+    por favor utilizar funciones matemáticas de Python para ello
+    d = rc((x2-x1)^2 + (y2-y1)^2)`)
 
 
-    let sueldo= Number(prompt(`Ingresa tu sueldo base: `))
-    let venta1= Number(prompt(`Ingresa el valor de la venta #1`))
-    let venta2= Number(prompt(`Ingresa el valor de la venta #2`))
-    let venta3= Number(prompt(`Ingresa el valor de la venta #3`))
+    let x1= Number(prompt(`Ingresa valor x1: `))
+    let x2= Number(prompt(`Ingresa valor x2: `))
+    let y1= Number(prompt(`Ingresa el valor y1: `))
+    let y2= Number(prompt(`Ingresa el valor y2: `))
 
-    let solucion= (venta1 + venta2 +venta3)*0.10
-    let total= (sueldo+solucion)
+    let solucion= (((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)))
 
-    console.log(`Tu comision es de: ${solucion}`)
-    console.log(`Tu sueldo total es de: ${total}`)  
+    console.log(`Valor de distancia: ${solucion}`)
 })
