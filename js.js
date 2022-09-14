@@ -1,15 +1,15 @@
 addEventListener("DOMContentLoaded",()=>{
-    console.log(`21. Se requiere calcular la distancia entre dos puntos, realizar el código que permita hallar la solución,
-    por favor utilizar funciones matemáticas de Python para ello
-    d = rc((x2-x1)^2 + (y2-y1)^2)`)
+    console.log(`22. Pablo compro 5 productos los dos primeros con un 5% de descuento y los 2 últimos con un 2% de
+    descuento, realice un algoritmo que indique cuanto fue el valor a pagar por cada producto y el total
+    de la compra.`)
 
+    let c1= Number(prompt(`Ingresa el valor de la compra 1: `))
+    let c2= Number(prompt(`Ingresa el valor de la compra 2: `))
+    let c3= Number(prompt(`Ingresa el valor de compra 3: `))
+    let c4= Number(prompt(`Ingresa el valor de la compra 4: `))
+    let c5= Number(prompt(`Ingresa el valor de la compra 5: `))
 
-    let x1= Number(prompt(`Ingresa valor x1: `))
-    let x2= Number(prompt(`Ingresa valor x2: `))
-    let y1= Number(prompt(`Ingresa el valor y1: `))
-    let y2= Number(prompt(`Ingresa el valor y2: `))
+    let solucion= (c1+c2)*0.5 + (c3+c4)*0.20 + c5
 
-    let solucion= (((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)))
-
-    console.log(`Valor de distancia: ${solucion}`)
+    console.log(`El valor total es: ${solucion}`)
 })
